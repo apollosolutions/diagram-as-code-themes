@@ -1,24 +1,19 @@
-# Solutions Repo Template
+# Diagram as Code Theme Repo
 
-Give your project a relevant name and description in this README.
+This respository contains theme/brand elements which will align with Apollo's branding guidelines. 
+
+The aim will be to support PlantUML, Mermaid and D2.
 
 **The code in this repository is experimental and has been provided for reference purposes only. Community feedback is welcome but this project may not be supported in the same way that repositories in the official [Apollo GraphQL GitHub organization](https://github.com/apollographql) are. If you need help you can file an issue on this repository, [contact Apollo](https://www.apollographql.com/contact-sales) to talk to an expert, or create a ticket directly in Apollo Studio.**
 
 ## Installation
 
-Outline the steps required to install project dependencies
+TBD
 
 ## Usage
 
-Provide detailed usage instructions here.
-
-## Known Limitations
-
-List any limitations of the project here:
-
-- Limitation 1
-- Limitation 2
+### PlantUML 
+!theme apollo from https://raw.githubusercontent.com/plantuml/plantuml/master/themes
 
 ## Notes
 
-Is there anything else the user should know about this project? (e.g. assumptions, prior art, references, etc.)
