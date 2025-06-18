@@ -8,12 +8,15 @@ The aim will be to support PlantUML, Mermaid and D2.
 
 ## Installation
 
-TBD
+N/A
 
 ## Usage
 
 ### PlantUML 
-!theme apollo from https://raw.githubusercontent.com/plantuml/plantuml/master/themes
+Add the following after your `@startuml`
+```
+!theme apollo from https://raw.githubusercontent.com/apollosolutions/diagram-as-code-themes/refs/heads/main/themes/plantuml
+```
 
 ## Notes
 
