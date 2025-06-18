@@ -15,7 +15,7 @@ N/A
 ### PlantUML 
 Add the following after your `@startuml`
 ```
-!theme apollo from https://raw.githubusercontent.com/apollosolutions/diagram-as-code-themes/refs/heads/main/themes/plantuml
+!theme apollo from https://raw.githubusercontent.com/apollosolutions/diagram-as-code-themes/main/themes/plantuml
 ```
 
 ## Notes
