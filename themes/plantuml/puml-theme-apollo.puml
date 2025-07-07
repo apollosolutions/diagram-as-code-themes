@@ -17,10 +17,6 @@ inspiration:
 !$WHITE      = "#FFFFFF"
 !$GRAY_LIGHT = "#222"
 !$GRAY       = "#868e96"
-!$PRIMARY    = "#EC7211"
-!$WARNING    = "#EC7211"
-!$LIGHT      = "#abb6c2"
-!$DARK       = "#4E5D6C"
 !$ACCENT_1_ORANGE = "#FC5200"
 !$ACCENT_2_DARK = "#212121"
 !$ACCENT_3_LIGHT = "#78909c"
@@ -30,7 +26,10 @@ inspiration:
 !$BACKGROUND_LIGHT = "#FDFDFD"
 !$BACKGROUND_DARK = "#15252D"
 !$BACKGROUND_GRAY = "#CFD7D6"
-
+!$PRIMARY    = $BACKGROUND_DARK
+!$WARNING    = "#EC7211"
+!$LIGHT      = "#abb6c2"
+!$DARK       = $ACCENT_2_DARK
 ''
 ''
 '' User can specify the PUML_BGCOLOR via command line or set this variable before
@@ -63,17 +62,8 @@ inspiration:
 ''
 skinparam BackgroundColor $PUML_BGCOLOR
 skinparam useBetaStyle false
-''
-'' Supplementary Colors
-''
-!$WHITE      = "#FFF"
-!$GRAY_LIGHT = "#222"
-!$GRAY       = "#868e96"
-!$PRIMARY    = "#15252D"
-!$WARNING    = "#EC7211"
-!$LIGHT      = "#abb6c2"
-!$DARK       = "#4E5D6C"
-''
+
+
 '' define colors based on PUML_MODE
 ''
 !if ($PUML_MODE == "light")
@@ -236,11 +226,13 @@ skinparam stereotype {
 }
 skinparam title {
 	FontSize	    	         20
-	BorderRoundCorner            8
-	BorderThickness 	         1
-	BackgroundColor  $SECONDARY_LIGHT-$SECONDARY
+	''BorderRoundCorner            8
+	''BorderThickness 	         1
+	''BackgroundColor  $SECONDARY 
+	''_LIGHT
+	''-$SECONDARY
 	FontColor $PRIMARY
-	BorderColor $SECONDARY
+	''BorderColor $SECONDARY
 }
 
 skinparam legend {
@@ -284,6 +276,9 @@ skinparam activity {
 	DiamondBackgroundColor $SECONDARY_BG
   	DiamondBorderColor $DIAMOND_BD
   	DiamondFontColor $SECONDARY_TEXT
+
+	BarColor $ACCENT_1_ORANGE
+	
 }
 !endsub
 
@@ -399,7 +394,7 @@ skinparam agent {
 skinparam note {
 	BorderThickness 1
 	BackgroundColor $INFO_BG
-	BorderColor $INFO_DARK
+	BorderColor $ACCENT_2_DARK
 	FontColor $INFO_TEXT
 }
 !endsub
